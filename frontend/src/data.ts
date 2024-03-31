@@ -1,4 +1,5 @@
 import { Food } from "./models/Food";
+import { Tag } from "./models/Tag";
 export const sample_foods: Food[] = [
     {
         id: '1',
@@ -15,6 +16,8 @@ export const sample_foods: Food[] = [
     {
         id: '2',
         name: 'Veggie Burger',
+        description: 'A juicy burger made  of vegetables instead of meat',
+        "tags": ["burger", "vegetarian", "veggie"] ,
         price: 6.49,
         favorite: false,
         stars: 3.9,
@@ -94,6 +97,15 @@ export const sample_foods: Food[] = [
         origins: ['India'],
         cookTime: '1hr 15 min'
     }
-
-
+]
+export const sample_tags:Tag[]=[
+    {name:'All', count:8},
+    {name: 'vegetarian',count:2},
+    {name: 'meat', count:5},
+    {name: 'mediterranean', count:1},
+    {name: 'mexican', count:2},
+    {name: 'indian', count:1},
+    {name: 'breakfast', count:1},
+    {name: 'dessert', count:1},
+    {name:'pizza', count:1}
 ]
